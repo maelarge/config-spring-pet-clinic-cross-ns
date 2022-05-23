@@ -49,7 +49,7 @@ spec:
           value: postgres
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: index.docker.io/tapsme/ppclaim-default@sha256:c4da692f977cb2f8a0d35cef0931e73e206408ef879d76f0454fca40d44a11f9
+        image: index.docker.io/tapsme/ppclaim-default@sha256:a601dc89c2884f1692a921eff5552730279d5a706dabbe281c4cebc91d111961
         livenessProbe:
           httpGet:
             path: /livez
